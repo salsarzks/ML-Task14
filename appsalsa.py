@@ -1,3 +1,4 @@
+
 import streamlit as st
 import pandas as pd
 from sklearn.datasets import load_iris
@@ -19,9 +20,7 @@ clf.fit(X_train, y_train.values.ravel())
 # Streamlit app
 st.title("Iris Flower Species Classification")
 
-st.write("""
-This app uses a RandomForestClassifier to classify Iris flower species based on their features.
-""")
+st.write("This app uses a RandomForestClassifier to classify Iris flower species based on their features.")
 
 # Sidebar for user input
 st.sidebar.header('User Input Features')
